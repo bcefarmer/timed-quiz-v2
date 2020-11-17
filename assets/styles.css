@@ -1,0 +1,19 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+   margin-left: 0px;
+   padding-left: 0px;
+}
+
+#timeLeft{
+  color: black;
+  font-size: 30px;
+}
+
+#correctAnswers{
+  color: black;
+  font-size: 30px;
+}
+
