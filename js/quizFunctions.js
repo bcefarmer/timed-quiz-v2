@@ -238,7 +238,7 @@ If last iteration is complete, sends to endQuiz() function.
 
         var numberQuestions = questionArray.length;
         
-        if(iteration === (numberQuestions)){
+        if(iteration >= numberQuestions){
         endQuiz();
         }
         else{
@@ -263,8 +263,6 @@ Saves user's initials and test information to local storage.
 
 function endQuiz(){
       clearInterval(counterStart);
-      
-      console.log("My interval = " + myInterval);
       var initials =  prompt("Quiz is over!  Please type your initials to save your score.");
 
 }
