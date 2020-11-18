@@ -263,8 +263,10 @@ Saves user's initials and test information to local storage.
 
 function endQuiz(){
       clearInterval(counterStart);
-      var initials =  prompt("Quiz is over!  Please type your initials to save your score.");
-
-}
+     // Prevent user from skipping this part.
+      do{
+        input = prompt("Quiz is over!  Please type your initials to save your score.");
+    }while(input == null || input == "" );
+    }
 
 
