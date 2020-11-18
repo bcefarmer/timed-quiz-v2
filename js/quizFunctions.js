@@ -267,6 +267,16 @@ function endQuiz(){
       do{
         input = prompt("Quiz is over!  Please type your initials to save your score.");
     }while(input == null || input == "" );
+
+    var storeResults = "{\"Initials\":" + input + "\"," +
+                        "\"Score\":"+ "\"" + correct + "\""
+                        + "}";
+
+    localStorage.setItem('pastString', storeResults);
+                
+
+    console.log("--storeResults= " + storeResults);
+    
     }
 
 
