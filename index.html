@@ -18,43 +18,27 @@
     </head>
     <body>
        <div class="container">
-       
-       <!--Row 1 is the header title.-->
        <div class="row" id="headerRow">
-           <div class="container-fluid">
-            <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1 class="text-center" style="margin-top:40px;">Timed Quiz</h1>
-            </header>
-            </div>
-        </div>
-        <!--MAIN SECTION-->
-       
         
-        <!-- Current test question group is divided in sub-rows for purpose of clean mobile integration-->
-        <main class="mt-3 row d-flex justify-content-center mt-4" id="currentTestQuestion"> 
-            <div> 
-            <h3 class="jumbotron text-center d-flex align-items-center col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:auto;" id="question"></h3>
-            
-                <ul class="row answerList mt-3" style="list-style-type: none;">
-                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-1 bg-primary text-white text-center border border-white d-flex justify-content-center align-items-center" id="answer_A" style="height:50px; width:150px;"> </li>
-                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-1 bg-secondary text-white text-center border border-white d-flex justify-content-center align-items-center" id="answer_B" style="height:50px; width:150px;"> </li> 
-                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-1 bg-info text-white text-center border border-white d-flex justify-content-center align-items-center" id="answer_C" style="height:50px; width:150px;"> </li> 
-               </ul>
-        
-            <div class="row mt-3">
-                <div class = "col-xs-12 col-12-6 col-md-6 col-lg-6 bg-white d-flex justify-content-center align-items-center" style="height: 200px;" > 
-                    <p id="timeLeft"></p>
-                </div>
-                <div class="col-xs-12 col-s-12 col-md-6 col-lg-6 bg-white d-flex justify-content-center align-items-center" style="height: 200px;"> 
-                    <p id="correctAnswers"></p>
-                </div>
-            </div>
+         <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+             <h1 class="text-center" id="testLabel" style="margin-top:40px;">Test Your Knowledge</h1>
+         </header>
+
+         <div class = "bg-white align-items-center mt-3" style="font-size:18px;" > 
+            <p>The following timed quiz measures your general knowledge of HTML, CSS and Javascript.</p>
+
+            <p> Press the 'Start' button below to begin this 60-second quiz.  Each wrong answer will invoke a 5-second penalty.</p>
+
+            <p>Good luck! </p>
         </div>
-  
-        </main>
-
-   </div> <!--Container wrapper end--> 
-       <script src="./js/quizFunctions.js"></script>
-    </body>
-</html>
-
+        <div class="row">
+        <div class = "bg-white col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3" style="font-size:18px;" > 
+            <button type="button" class="btn btn-primary btn-lg align-items-center justify-content-center" id="beginTest">Start!</button>
+        </div>
+        </div>
+        
+         </div>
+     
+         <script src="./js/startPage.js"></script>
+       </div>
+       </html>

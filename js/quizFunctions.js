@@ -1,3 +1,7 @@
+
+
+/*window.location.href = "index.html";*/
+console.log("Finished page shift")
 var questionArray = [
     {"Question": "What html tag represents a paragraph?",
      "Choices": {
@@ -273,10 +277,15 @@ function endQuiz(){
                         + "}";
 
     localStorage.setItem('pastString', storeResults);
-                
-
-    console.log("--storeResults= " + storeResults);
-    
-    }
+}
 
 
+function housekeeping(){
+        var correct = 0;
+        var wrong = 0;
+        var iteration = 0;
+        var secondsCounter = 60;
+}
+
+
+        
