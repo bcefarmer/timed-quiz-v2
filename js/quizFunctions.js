@@ -1,7 +1,16 @@
+//---------------------
+/* 
+questionArray []
 
+PURPOSE: Questions, answer choices and answers are passed in a single JSON object PER ARRAY INDEX.  I picked this approach because of the simplicity of evaluating single-letter answers
+when user clicks a choice.
 
-/*window.location.href = "index.html";*/
-console.log("Finished page shift")
+PARAMETERS: None.
+
+Returns: N/A
+*/
+//---------------------
+
 var questionArray = [
     {"Question": "What html tag represents a paragraph?",
      "Choices": {
@@ -44,12 +53,12 @@ var questionArray = [
       
 var correct = 0;
 var wrong = 0;
-var iteration = 0;
-var secondsCounter = 60;
+var iteration = 0; // Which array index are we dealing with?
+var secondsCounter = 60;  // Begin counter at 1 min.
 
 /*
 PURPOSE: variable counterStart starts counter interval of 1000ms.  Calls function
-subtract time, which decrements secondsCounter at -1 per second.
+subtractTime(), which decrements secondsCounter at -1 per second.
 */ 
 
 var counterStart = setInterval(subtractTime, 1000);
@@ -271,7 +280,8 @@ function endQuiz(){
       do{
         input = prompt("Quiz is over!  Please type your initials to save your score.");
     }while(input == null || input == "" );
-
+    
+    // Pass results onto local storage.
     var storeResults = "{\"Initials\":" + input + "\"," +
                         "\"Score\":"+ "\"" + correct + "\""
                         + "}";
