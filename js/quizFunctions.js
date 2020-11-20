@@ -113,7 +113,7 @@ function initiateStartingValues(){
          fillInQuestions(0,0,0);
          
 
-         console.log("--intiateStartingValues secondsCounter: " + secondsCounter);
+         
 };
 
 //---------------------
@@ -134,7 +134,6 @@ counterStart calls subtractTime.  subtractTime calls endQuiz.
 
 function subtractTime(){
         if(secondsCounter > 0){
-        console.log("--Second went by")
         secondsCounter--;
         countdownText.textContent = "Time Left: " + secondsCounter;
         }
@@ -159,9 +158,7 @@ Returns: N/A
 
 function timePenalty(){
 if(secondsCounter > 5){
-console.log("--secondsCounter BEFORE: " + secondsCounter);
 secondsCounter = secondsCounter - 5;
-console.log("--secondsCounter AFTER: " + secondsCounter);
 countdownText.textContent="Time Left: " + secondsCounter;
 
 }
@@ -194,7 +191,6 @@ function fillInQuestions(arrayPoint, countCorrect, countWrong){
        var choice2 = document.getElementById("answer_B");
        var choice3 = document.getElementById("answer_C");
        var obj = questionArray[arrayPoint];
-       console.log("--obj: " + obj);
        questionBlock.textContent = obj.Question;
        choice1.textContent = obj.Choices.A;
        choice2.textContent = obj.Choices.B;
@@ -225,8 +221,6 @@ Sends a single character string to function evaluateSubmission.
                 var choiceID = event.target.getAttribute("id");
                 // Find last letter in id.  Will either be A, B, or C.
                 var lastChar = choiceID.charAt(choiceID.length - 1);
-                console.log(lastChar);
- 
                 evaluateSubmission(lastChar);
         }
         );
