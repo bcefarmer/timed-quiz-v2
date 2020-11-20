@@ -27,7 +27,7 @@ if(localStorage.pastString != null && localStorage.pastString != "" ){
 // On start button click, travel to timedQuiz.html.
 var  runButton = document.querySelector("#beginTest"); 
 runButton.addEventListener("click", function(event){
-window.location.href = "timedQuiz.html";
+window.location = "timedQuiz.html";
     })
 
 
