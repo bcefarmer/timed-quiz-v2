@@ -1,3 +1,5 @@
+
+
 //---------------------
 /* 
 questionArray []
@@ -279,14 +281,17 @@ function endQuiz(){
      // Prevent user from skipping this part.
       do{
         input = prompt("Quiz is over!  Please type your initials to save your score.");
-    }while(input == null || input == "" );
+         }while(input == null || input == "" );
     
     // Pass results onto local storage.
-    var storeResults = "{\"Initials\":" + input + "\"," +
+    var storeResults = "{\"Initials\": \"" + input + "\"," +
                         "\"Score\":"+ "\"" + correct + "\""
                         + "}";
 
-    localStorage.setItem('pastString', storeResults);
+    localStorage.setItem('pastString', JSON.stringify(storeResults));
+   housekeeping();
+   window.location.href = "index.html";
+
 }
 
 
