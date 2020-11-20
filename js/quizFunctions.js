@@ -50,6 +50,24 @@ var questionArray = [
    "Answer": "A"
   }, 
   //--------------------------------------3
+  {"Question": "Which is the name of an actual Javascript library?",
+  "Choices": {
+             "A" : "Psychopomp",
+             "B" : "Necronomicon",
+             "C" : "JQuery"
+           },
+  "Answer": "C"
+ }, 
+ //--------------------------------------4
+ {"Question": "Which JQuery method will insert specified content at the end of selected elements?",
+  "Choices": {
+             "A" : ".addendum()",
+             "B" : ".append()",
+             "C" : ".afterConnect()"
+           },
+  "Answer": "B"
+ }, 
+ //--------------------------------------5
          ]; 
 
       

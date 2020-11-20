@@ -19,33 +19,28 @@
 
     <body>
        <div class="container">
-       <div class="row" id="headerRow">
-        
-       <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1 class="text-center" id="testLabel" style="margin-top:40px;">Test Your Knowledge</h1>
-       </header>
+
+       <div class="headerRow">
+            <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1 class="text-center" id="testLabel" style="margin-top:40px;">Test Your Knowledge</h1>
+            </header>
         </div>
 
 
-       
     <main>
-         <div class = "bg-white align-items-center mt-3" id="quizInstructions" style="font-size:18px;" > 
-            <p>The following timed quiz measures your general knowledge of HTML, CSS and Javascript.</p>
-
-            <p> Press the 'Start' button below to begin this 60-second quiz.  Each wrong answer will invoke a 5-second penalty.</p>
-
-            <p>Good luck! </p>
-        </div>
+         <div class = "bg-white align-items-center mt-3 mb-5" id="quizInstructions" style="font-size:18px;" > 
+            <p class="text-center">The following timed quiz measures your general knowledge of HTML, CSS and Javascript. Press the 'Start' button below to begin this 60-second quiz.  Each wrong answer will invoke a 5-second penalty.  Good luck!</p>
+         </div>
         
         <div class="row flex-row">
-            <div class= "col-xs-12 col-md-12 col-sm-12 col-lg-12 d-flex justify-content-center">   
+            <div class= "col-xs-12 col-md-12 col-sm-12 col-lg-12 d-flex justify-content-center mb-5">   
             <button type="button" class="btn btn-primary btn-lg" id="beginTest">Start!</button>
         </div>
         </div>
        </main>
 
 
-       <section id="lastScore"> </section>
+       <section class="mt-5 font-weight-bold" id="lastScore"> </section>
 
     </div>
        <script src="./js/startPage.js"></script>
