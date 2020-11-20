@@ -13,6 +13,7 @@ create a display of the user's last quiz score near the bottom of the screen.
 if(localStorage.pastString != null && localStorage.pastString != "" ){
     var pastString = localStorage.pastString;
     var scoreSection = document.getElementById("lastScore");
+    
     var obj = JSON.parse(pastString);
     var takerInit= obj.Initials;
     var takerScore = obj.Score;

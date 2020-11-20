@@ -288,7 +288,7 @@ function endQuiz(){
                         "\"Score\":"+ "\"" + correct + "\""
                         + "}";
 
-    localStorage.setItem('pastString', JSON.stringify(storeResults));
+    localStorage.setItem('pastString', storeResults);
    housekeeping();
    window.location.href = "index.html";
 
