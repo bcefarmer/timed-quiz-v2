@@ -1,11 +1,13 @@
-PURPOSE:
+# Timed Quiz
+
+## PURPOSE:
 The timed-quiz app is a click-responsive test in which the user is given a time-penalty
 for each wrong answer. 
 
-#LANGUAGES USED:
+## LANGUAGES USED:
 HTML (Bootstrap Framework), CSS and Javascript
 
-#METHODOLOGIES:
+## METHODOLOGIES:
 This app's functionality comes from Javascript creating user-interactions with an array.  At each index of this array is a JSON object that repesents a question, answer-choices, and a one-letter "definition" of the correct answer.  This is done to simply the conditionals when
 evaluating for an answer.
 
